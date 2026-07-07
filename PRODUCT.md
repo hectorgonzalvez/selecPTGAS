@@ -131,6 +131,8 @@ Bloc d'accions que criden l'API d'e-adm des de la fitxa de convocatòria:
 - Camps del subexercici: descripció, puntuació màxima (pot diferir de l'exercici pare), **si és tipus test** (afecta la lectura de notes des de disc), nota de tall per cupo.
 - **Nota històrica**: fa un temps les oposicions tenien proves d'idioma/valencià independents; ara **només 3 exercicis** i eixes proves són mèrits valorables en fase de concurs.
 - **Lletres de distribució**: historial de lletres oficials de la Generalitat Valenciana (lletra + any + data de resolució) per a sortejar l'orde d'actuació.
+- **Identificació d'exercici/subexercici**: es fa per orde + tipus (ambdós obligatoris); si un exercici només té un subexercici i no cal matisar-ne el tipus, s'usa l'opció "--- Únic ---". Botó "Eliminar exercici" esborra en cascada tots els seus subexercicis.
+- **Informe d'exercicis**: mostra les dades de cada exercici i els seus subexercicis (camps descrits dalt).
 
 ## Aules
 
@@ -147,6 +149,7 @@ Bloc d'accions que criden l'API d'e-adm des de la fitxa de convocatòria:
 Tres seccions encadenades:
 
 1. **Calificació de subexercicis**: des de fitxer Excel (format fix de la lectora de fulls test del Servei d'Informàtica), manual, o individual per DNI.
+   - **Obtindre notes de disc**: la primera lectura d'un exercici no requerix cap dada addicional. En llegir el fitxer es mostra un xicotet informe amb la informació extreta; si hi ha algun problema llegint algun DNI, es mostra mitjançant un missatge (**sense detall estructurat per fila** — a millorar en el nou disseny, vore `UX-AUDIT.md`).
    - **Rectificacions**: si es torna a pujar un fitxer, cal indicar si és una rectificació + motiu. Regla crítica: **l'opció "eliminar els no coincidents" només s'ha d'usar en una revisió d'examen** (esborra calificacions existents sense suport en les noves notes) — **mai en una ampliació de notes**, perquè eliminaria erròniament aspirants ja calificats que no apareixen en el fitxer nou.
    - Esborrar la calificació d'un subexercici **esborra en cascada** la de l'exercici i la de la convocatòria.
 2. **Calificació d'exercicis**: "Establir aptes" (requerix calificacions de tots els subexercicis previs). Els aptes d'un exercici són els que apareixen en els llistats del següent.

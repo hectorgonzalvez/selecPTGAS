@@ -56,4 +56,5 @@ Este mòdul **no defineix** decisions visuals pròpies — les hereta del Design
 
 ---
 
-*Generat a partir de `DocOposPAS.pdf` (especificació funcional de l'aplicació ASP original).*
+*Generat a partir de `seleccio-oposPTGAS.pdf` (especificació funcional de l'aplicació ASP original, 40 pàgines, majoritàriament captures de pantalla).*
+*Auditoria UX del producte actual: @UX-AUDIT.md*

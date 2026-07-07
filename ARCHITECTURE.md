@@ -58,7 +58,8 @@ On `design-system.md` és el fitxer de regles operatives compactes del repositor
 
 | Fitxer | Contingut |
 |---|---|
-| `DocOposPAS.pdf` | Especificació funcional original (font primària, no modificar) |
+| `seleccio-oposPTGAS.pdf` | Especificació funcional original (font primària, no modificar) |
 | `PRODUCT.md` | Domini, mòduls, regles de negoci, objectiu de la migració |
 | `DECISIONS.md` | Regles de negoci immutables/crítiques descobertes en l'auditoria |
+| `UX-AUDIT.md` | Auditoria UX del producte ASP actual — problemes a resoldre en el disseny del nou frontend |
 | `CLAUDE.md` | Punt d'entrada — enllaça als anteriors + al Design System |
